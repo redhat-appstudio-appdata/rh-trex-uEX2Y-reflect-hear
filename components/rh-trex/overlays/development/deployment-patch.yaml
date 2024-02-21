@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: rh-trex
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/gallen-tenant/rh-trex/rh-trex@sha256:563d8d2cb1251990a752aef24e6359ceb4e7876a59ae1ce9790c4df9faf46e07
+        name: container-image
+        resources: {}
+status: {}
